@@ -50,7 +50,7 @@ def encode(val):
 	for chval in [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]:
 	# Calc number of these chars in output
 	  ch = nv[chval]
-	  cnt = int(val / chval)
+	  cnt = val // chval
 	  rn = rn + (ch * cnt)
 	  val = val - cnt * chval
 	return rn
